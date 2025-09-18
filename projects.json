@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "Built with Next.js, TypeScript, Tailwind, shadcn, and GSAP. A personal site to showcase my work and skills.",
+      "tech": ["Next.js", "TypeScript", "Tailwind", "GSAP", "shadcn/ui"],
+      "code": "https://github.com/harsh6575/portfolio",
+      "demo": "https://your-portfolio.vercel.app"
+    },
+    {
+      "title": "AlgoAcharya Trading Platform",
+      "description": "Contributed as a core developer at AlgoAcharya, building an internal algo-based trading platform. Developed real-time dashboards, custom UI components, and integrated APIs to support algorithmic trading workflows.",
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "WebSockets",
+        "GraphQL",
+        "PostgreSQL"
+      ],
+      "code": "#",
+      "demo": "#"
+    },
+    {
+      "title": "Lift Management System",
+      "description": "System design project implemented in Java. Focused on concurrency, scheduling, and scalability.",
+      "tech": ["Java", "OOP", "Concurrency", "System Design"],
+      "code": "https://github.com/harsh6575/lift-management",
+      "demo": "#"
+    },
+    {
+      "title": "Ticket Booking System",
+      "description": "Backend project simulating a ticket reservation system with database integration and API endpoints.",
+      "tech": ["Java", "Spring Boot", "SQL"],
+      "code": "https://github.com/harsh6575/ticket-booking",
+      "demo": "#"
+    },
+    {
+      "title": "URL Shortener with Analytics",
+      "description": "A backend-focused project implementing a URL shortening service with click tracking and analytics. Features include unique short link generation, expiration, and user dashboard.",
+      "tech": ["Java", "Spring Boot", "PostgreSQL", "Redis", "Docker"],
+      "code": "https://github.com/harsh6575/url-shortener",
+      "demo": "#"
+    }
+  ]
+}
