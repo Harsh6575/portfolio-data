@@ -1,0 +1,101 @@
+{
+  "skills": [
+    {
+      "category": "Backend Focus",
+      "icon": "Server",
+      "period": "2024 - Present",
+      "description": "Current specialization in scalable backend systems",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Spring Boot",
+        "REST API",
+        "GraphQL",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "priority": true
+    },
+    {
+      "category": "Algorithmic Trading",
+      "icon": "TrendingUp",
+      "period": "2024 - Present",
+      "description": "Market data analysis and automated strategies",
+      "items": [
+        "Python",
+        "pandas",
+        "NumPy",
+        "yfinance",
+        "Jupyter Notebooks",
+        "Data Analysis"
+      ],
+      "priority": true
+    },
+    {
+      "category": "Frontend & Full-Stack",
+      "icon": "Code",
+      "period": "2022 - Present",
+      "description": "Modern web development with React ecosystem",
+      "items": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "priority": false
+    },
+    {
+      "category": "Databases",
+      "icon": "Database",
+      "period": "2023 - Present",
+      "description": "Schema design, indexing, and query optimization for relational & NoSQL databases",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "SQL Server",
+        "Database Design",
+        "Query Optimization"
+      ],
+      "priority": false
+    },
+    {
+      "category": "Tools & DevOps",
+      "icon": "Wrench",
+      "period": "2022 - Present",
+      "description": "Development workflow and deployment tools",
+      "items": [
+        "Git",
+        "Docker",
+        "GitHub",
+        "BitBucket",
+        "Postman",
+        "VS Code",
+        "Linux",
+        "Vercel",
+        "CI/CD"
+      ],
+      "priority": false
+    },
+    {
+      "category": "Languages",
+      "icon": "Braces",
+      "period": "2022 - Present",
+      "description": "Programming languages in active use",
+      "items": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "priority": false
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-01-27",
+    "version": "1.0"
+  }
+}
