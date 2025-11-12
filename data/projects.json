@@ -1,46 +1,172 @@
 {
   "projects": [
     {
-      "title": "Portfolio Website",
-      "description": "Built with Next.js, TypeScript, Tailwind, shadcn, and GSAP. A personal site to showcase my work and skills.",
-      "tech": ["Next.js", "TypeScript", "Tailwind", "GSAP", "shadcn/ui"],
-      "code": "https://github.com/harsh6575/portfolio",
-      "demo": "https://your-portfolio.vercel.app"
+      "title": "Shortify - URL Shortener",
+      "description": "A high-performance URL shortening service built to explore system design principles and scalable backend architecture. Features hash-based ID generation, multi-database integration (PostgreSQL + Redis + MongoDB), and optimized caching strategies for sub-millisecond redirects.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "SQLAlchemy",
+        "Docker",
+        "asyncpg"
+      ],
+      "category": "Backend",
+      "status": "In Progress",
+      "date": "Nov 2025",
+      "features": [
+        "Hash-based short ID generation using SHA-256 + Base62 encoding",
+        "Three-tier caching architecture with Redis (7-day TTL)",
+        "Async database operations with SQLAlchemy and asyncpg",
+        "RESTful API with automatic documentation (Swagger/OpenAPI)",
+        "Deterministic URL shortening with collision detection",
+        "Real-time cache invalidation and TTL management",
+        "Multi-database architecture exploring different use cases",
+        "Horizontal scalability with stateless API design"
+      ],
+      "links": [
+        {
+          "type": "github",
+          "label": "View Source",
+          "url": "https://github.com/harsh6575/shortify"
+        }
+      ]
     },
     {
-      "title": "AlgoAcharya Trading Platform",
-      "description": "Contributed as a core developer at AlgoAcharya, building an internal algo-based trading platform. Developed real-time dashboards, custom UI components, and integrated APIs to support algorithmic trading workflows.",
-      "tech": [
+      "title": "Tailor Management System",
+      "description": "A full-stack tailor shop management system with separate frontend and backend. Built to manage customer orders, measurements, billing, and inventory with a modern tech stack implementing RESTful APIs and responsive UI design.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "TypeScript",
+        "Tailwind CSS",
+        "JWT",
+        "Docker",
+        "Vitest",
+        "Drizzle ORM"
+      ],
+      "category": "Full Stack",
+      "status": "In Progress",
+      "date": "Oct - Nov 2025",
+      "features": [
+        "Customer order & measurement tracking",
+        "Real-time inventory management",
+        "Billing & invoice generation",
+        "RESTful API architecture",
+        "JWT authentication & role-based access",
+        "Responsive modern UI design"
+      ],
+      "links": [
+        {
+          "type": "github",
+          "label": "Backend Code",
+          "url": "https://github.com/harsh6575/tailor-track-backend"
+        },
+        {
+          "type": "github",
+          "label": "Frontend Code",
+          "url": "https://github.com/harsh6575/tailor-track-frontend"
+        }
+      ]
+    },
+    {
+      "title": "Patient Management System",
+      "description": "A distributed healthcare management system built with Spring Boot microservices architecture. Designed to learn and implement enterprise-level backend patterns including API Gateway, service mesh communication, and event-driven architecture.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "gRPC",
+        "Kafka",
+        "PostgreSQL",
+        "Docker",
+        "JWT"
+      ],
+      "category": "Backend",
+      "status": "Completed",
+      "date": "2025",
+      "features": [
+        "5-service microservices architecture",
+        "API Gateway with request routing & auth",
+        "gRPC inter-service communication",
+        "Kafka event streaming for analytics",
+        "JWT authentication & authorization",
+        "Docker containerized deployment"
+      ],
+      "links": [
+        {
+          "type": "github",
+          "label": "Code",
+          "url": "https://github.com/harsh6575/patient-management-spring-boot"
+        }
+      ]
+    },
+    {
+      "title": "Algorithmic Trading Platform",
+      "description": "A sophisticated trading platform for the Indian stock market with automated strategies, real-time data analysis, and portfolio management capabilities.",
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "pandas",
+        "NumPy",
+        "yfinance",
+        "Next.js",
+        "GraphQL"
+      ],
+      "category": "FinTech",
+      "status": "Professional Project",
+      "date": "2023-2025",
+      "features": [
+        "Real-time market data integration",
+        "Automated trading algorithm execution",
+        "Comprehensive backtesting system",
+        "Portfolio performance analytics",
+        "Risk management tools",
+        "Custom algorithm development interface"
+      ],
+      "links": []
+    },
+    {
+      "title": "Hotel Reservation Platform",
+      "description": "A full-stack hotel booking application inspired by Airbnb, built with modern web technologies. Features complete user authentication, property listings, booking system, and payment integration.",
+      "technologies": [
         "Next.js",
         "TypeScript",
-        "Tailwind",
-        "WebSockets",
-        "GraphQL",
-        "PostgreSQL"
+        "Tailwind CSS",
+        "Prisma",
+        "NextAuth.js",
+        "React-Leaflet",
+        "Cloudinary"
       ],
-      "code": "#",
-      "demo": "#"
-    },
-    {
-      "title": "Lift Management System",
-      "description": "System design project implemented in Java. Focused on concurrency, scheduling, and scalability.",
-      "tech": ["Java", "OOP", "Concurrency", "System Design"],
-      "code": "https://github.com/harsh6575/lift-management",
-      "demo": "#"
-    },
-    {
-      "title": "Ticket Booking System",
-      "description": "Backend project simulating a ticket reservation system with database integration and API endpoints.",
-      "tech": ["Java", "Spring Boot", "SQL"],
-      "code": "https://github.com/harsh6575/ticket-booking",
-      "demo": "#"
-    },
-    {
-      "title": "URL Shortener with Analytics",
-      "description": "A backend-focused project implementing a URL shortening service with click tracking and analytics. Features include unique short link generation, expiration, and user dashboard.",
-      "tech": ["Java", "Spring Boot", "PostgreSQL", "Redis", "Docker"],
-      "code": "https://github.com/harsh6575/url-shortener",
-      "demo": "#"
+      "category": "Full-Stack",
+      "status": "Completed",
+      "date": "2022",
+      "features": [
+        "User authentication and authorization system",
+        "Property listing with image galleries",
+        "Advanced search and filtering options",
+        "Interactive maps integration",
+        "Booking system with date selection",
+        "Responsive design across all devices"
+      ],
+      "links": [
+        {
+          "type": "github",
+          "label": "Code",
+          "url": "https://github.com/harsh6575/airbnb-clone"
+        },
+        {
+          "type": "live",
+          "label": "Demo",
+          "url": "https://hotel-reservation-harsh6575.vercel.app/"
+        }
+      ]
     }
   ]
 }
