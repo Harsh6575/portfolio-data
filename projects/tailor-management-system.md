@@ -21,6 +21,13 @@ technologies:
   - TanStack Query
   - Zustand
   - Turborepo
+features:
+  - Designed around the real day-to-day workflow of a family-run tailoring shop
+  - Multi-shop workspaces with role-based membership (owner/staff)
+  - Customer management with per-customer measurement records
+  - Shared validation and type layer across web, mobile, and API
+  - Cookie-based auth for web, token + SecureStore auth for mobile
+  - Mobile app built with Expo, covering auth, shops, customers, and measurements
 links: []
 order: 1
 hidden: false
@@ -37,6 +44,7 @@ A tailoring business management system built for a family member's tailoring sho
 
 ## Key Highlights
 
+- Designed around the real day-to-day workflow of a family-run tailoring shop
 - Multi-shop workspaces with role-based membership (owner/staff)
 - Customer management with per-customer measurement records
 - Shared validation and type layer across web, mobile, and API
