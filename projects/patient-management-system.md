@@ -4,7 +4,7 @@ slug: patient-management-system
 description: "A distributed healthcare operations system built on Spring Boot microservices, with an API Gateway, gRPC for inter-service calls, and Kafka for async event streaming."
 category: Backend
 status: Completed
-date: "2025"
+date: "Aug - Sep 2025"
 technologies:
   - Java
   - Spring Boot

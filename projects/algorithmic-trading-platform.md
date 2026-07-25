@@ -4,7 +4,7 @@ slug: algorithmic-trading-platform
 description: "A trading platform for the Indian equities market, built during my time at a fintech startup. I focused primarily on the frontend, with some backend contributions."
 category: FinTech
 status: Professional Project
-date: "2023-2025"
+date: "Sep 2023 - May 2025"
 technologies:
   - Next.js
   - TypeScript
