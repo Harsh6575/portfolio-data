@@ -2,7 +2,7 @@
 title: "Tailor Track"
 slug: tailor-track
 description: "A tailoring business management system for small and medium tailoring shops, built as a Turborepo monorepo with a Next.js web app, an Expo mobile app, and an Express + PostgreSQL API sharing a single validation layer."
-category: Full Stack
+category: Full-Stack
 status: In Progress
 date: "Jun 2026 - Present"
 technologies:
