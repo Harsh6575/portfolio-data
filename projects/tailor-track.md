@@ -21,6 +21,7 @@ technologies:
   - TanStack Query
   - Zustand
   - Turborepo
+  - BullMQ
 features:
   - Designed around the real day-to-day workflow of a family-run tailoring shop
   - Multi-shop workspaces with role-based membership (owner/staff)
