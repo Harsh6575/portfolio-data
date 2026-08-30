@@ -7,11 +7,14 @@ status: Completed
 date: "Aug - Sep 2023"
 technologies:
   - Next.js
+  - React
   - TypeScript
+  - Node.js
+  - Tailwind CSS
+  - PostgreSQL
   - Supabase
   - Stripe
   - Zustand
-  - Tailwind CSS
 features:
   - Song upload with audio and cover image storage
   - Custom audio player with playback controls
@@ -48,8 +51,8 @@ A full-stack music streaming app inspired by Spotify, tying song upload, playbac
 
 ## Tech Stack
 
-- **Next.js & TypeScript** for the full-stack application
-- **Supabase** for auth, database, and file storage
+- **Next.js, React, TypeScript & Node.js** for the full-stack application
+- **Supabase & PostgreSQL** for auth, relational database, and file storage
 - **Stripe** for subscription billing
 - **Zustand** for player and modal state
 - **Tailwind CSS & Radix UI** for the interface

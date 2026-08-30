@@ -7,16 +7,19 @@ status: Professional Project
 date: "Sep 2023 - May 2025"
 technologies:
   - Next.js
+  - React
   - TypeScript
   - Tailwind CSS
   - shadcn/ui
-  - GraphQL
-  - Axios
-  - Zustand
+  - Python
   - Django
   - PostgreSQL
   - Celery
+  - GraphQL
+  - REST APIs
   - Docker
+  - Axios
+  - Zustand
 features:
   - Trading dashboard and portfolio views
   - Strategy and backtesting interfaces
@@ -30,9 +33,9 @@ A trading platform for the Indian equities market, built during my time at a fin
 
 ## How It Works
 
-- The frontend is a Next.js and TypeScript app, using GraphQL and Axios for data fetching and Zustand for client state, styled with Tailwind CSS and shadcn/ui.
+- The frontend is a Next.js, React, and TypeScript app, using GraphQL, REST APIs, and Axios for data fetching and Zustand for client state, styled with Tailwind CSS and shadcn/ui.
 - It provides a trading dashboard, portfolio views, and interfaces for configuring and backtesting strategies.
-- I had basic involvement on the backend, which was built with Django, PostgreSQL, Celery, and Docker.
+- I had basic involvement on the backend, which was built with Python, Django, PostgreSQL, Celery, and Docker.
 
 ## Key Highlights
 
@@ -42,6 +45,6 @@ A trading platform for the Indian equities market, built during my time at a fin
 
 ## Tech Stack
 
-- **Next.js, TypeScript & Tailwind CSS** with **shadcn/ui** for the frontend
-- **GraphQL & Axios** for data fetching, **Zustand** for state
-- **Django, PostgreSQL, Celery & Docker** on the backend
+- **Next.js, React, TypeScript & Tailwind CSS** with **shadcn/ui** for the frontend
+- **GraphQL, REST APIs & Axios** for data fetching, **Zustand** for state
+- **Python, Django, PostgreSQL, Celery & Docker** on the backend

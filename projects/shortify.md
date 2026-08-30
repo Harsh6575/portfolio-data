@@ -8,9 +8,11 @@ date: "Nov 2025"
 technologies:
   - Python
   - FastAPI
+  - REST APIs
   - MongoDB
   - Redis
   - Docker
+  - Docker Compose
 features:
   - Hash-based short ID generation using SHA-256 + Base62 encoding, scoped per user
   - Three-tier caching architecture with Redis (7-day TTL, refreshed on every hit)

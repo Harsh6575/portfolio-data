@@ -7,7 +7,9 @@ status: Completed
 date: "May - Jun 2023"
 technologies:
   - Next.js
+  - React
   - TypeScript
+  - Node.js
   - Tailwind CSS
   - Prisma
   - MongoDB
@@ -54,7 +56,7 @@ A full-stack hospitality marketplace inspired by Airbnb, covering the full booki
 
 ## Tech Stack
 
-- **Next.js & TypeScript** for the full-stack application
+- **Next.js, React, TypeScript & Node.js** for the full-stack application
 - **Prisma & MongoDB** for type-safe, flexible-schema data storage
 - **NextAuth.js** for multi-provider authentication
 - **React-Leaflet** for interactive map search

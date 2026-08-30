@@ -7,7 +7,10 @@ status: Completed
 date: "May - Jul 2023"
 technologies:
   - Next.js
+  - React
   - TypeScript
+  - Node.js
+  - Tailwind CSS
   - MongoDB
   - Prisma
   - NextAuth.js
@@ -49,7 +52,8 @@ A real-time chat app covering one-on-one and group conversations, image messages
 
 ## Tech Stack
 
-- **Next.js & TypeScript** for the full-stack application
+- **Next.js, React, TypeScript & Node.js** for the full-stack application
+- **Tailwind CSS** for responsive chat UI styling
 - **Prisma & MongoDB** for the data layer
 - **NextAuth.js** for multi-provider authentication
 - **Pusher** for real-time message delivery

@@ -1,89 +1,106 @@
 {
   "skills": [
     {
-      "category": "Backend Focus",
+      "category": "Backend Development",
       "icon": "Server",
-      "period": "2024 - Present",
-      "description": "Current specialization in scalable backend systems",
+      "period": "2023 - Present",
+      "description": "Building scalable backend systems, well-structured APIs, and production-ready service architectures.",
       "items": [
         "Node.js",
-        "Express.js",
+        "Express",
+        "FastAPI",
         "Django",
-        "Spring Boot",
-        "REST API",
+        "REST APIs",
         "GraphQL",
         "PostgreSQL",
-        "MongoDB"
+        "MongoDB",
+        "Redis",
+        "Prisma",
+        "BullMQ",
+        "NextAuth.js",
+        "Stripe",
+        "n8n Automation",
+        "JWT Authentication",
+        "Caching Strategies",
+        "API Design"
       ],
       "priority": true
     },
     {
-      "category": "Algorithmic Trading",
-      "icon": "TrendingUp",
-      "period": "2024 - Present",
-      "description": "Market data analysis and automated strategies",
-      "items": [
-        "Python",
-        "pandas",
-        "NumPy",
-        "yfinance",
-        "Jupyter Notebooks",
-        "Data Analysis"
-      ],
-      "priority": true
-    },
-    {
-      "category": "Frontend & Full-Stack",
+      "category": "Frontend Development",
       "icon": "Code",
       "period": "2022 - Present",
-      "description": "Modern web development with React ecosystem",
+      "description": "Developing modern, responsive user interfaces and integrating complex backend APIs.",
       "items": [
         "Next.js",
         "React",
         "TypeScript",
         "JavaScript (ES6+)",
         "Tailwind CSS",
-        "shadcn/ui"
+        "shadcn/ui",
+        "Zustand",
+        "API Integration"
       ],
-      "priority": false
+      "priority": true
     },
     {
-      "category": "Databases",
-      "icon": "Database",
-      "period": "2023 - Present",
-      "description": "Schema design, indexing, and query optimization for relational & NoSQL databases",
-      "items": [
-        "PostgreSQL",
-        "MongoDB",
-        "SQL Server",
-        "Database Design",
-        "Query Optimization"
-      ],
-      "priority": false
-    },
-    {
-      "category": "Tools & DevOps",
+      "category": "Cloud & DevOps",
       "icon": "Wrench",
-      "period": "2022 - Present",
-      "description": "Development workflow and deployment tools",
+      "period": "2023 - Present",
+      "description": "Deploying, containerizing, and managing applications on cloud infrastructure.",
       "items": [
-        "Git",
+        "AWS EC2",
+        "AWS S3",
+        "AWS IAM",
         "Docker",
-        "GitHub",
-        "BitBucket",
-        "Postman",
-        "VS Code",
+        "Docker Compose",
+        "CI/CD",
         "Linux",
         "Vercel",
-        "CI/CD"
+        "Git",
+        "GitHub",
+        "Bitbucket",
+        "Postman"
+      ],
+      "priority": true
+    },
+    {
+      "category": "Database & System Concepts",
+      "icon": "Database",
+      "period": "2023 - Present",
+      "description": "Designing efficient data models and optimizing database performance.",
+      "items": [
+        "Schema Design",
+        "Query Optimization",
+        "Indexing",
+        "Transactions",
+        "Normalization"
+      ],
+      "priority": false
+    },
+    {
+      "category": "Python & Market Data Analysis",
+      "icon": "CandlestickChart",
+      "period": "2023 - Present",
+      "description": "Working with market data to analyze trends, visualize insights, and experiment with trading strategies.",
+      "items": [
+        "Python",
+        "pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "yfinance",
+        "Jupyter Notebooks",
+        "Data Analysis",
+        "Basic Strategy Backtesting"
       ],
       "priority": false
     },
     {
       "category": "Languages",
-      "icon": "Braces",
+      "icon": "Terminal",
       "period": "2022 - Present",
-      "description": "Programming languages in active use",
+      "description": "Programming languages used across backend, frontend, and automation projects.",
       "items": [
         "TypeScript",
         "JavaScript",
@@ -95,7 +112,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2025-01-27",
-    "version": "1.0"
+    "lastUpdated": "2026-08-30",
+    "version": "2.0"
   }
 }

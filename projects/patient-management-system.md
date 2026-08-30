@@ -10,10 +10,11 @@ technologies:
   - Spring Boot
   - Microservices
   - gRPC
+  - REST APIs
   - Kafka
   - PostgreSQL
   - Docker
-  - JWT
+  - JWT Authentication
 features:
   - 5-service microservices architecture
   - API Gateway with request routing & auth

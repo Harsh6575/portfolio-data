@@ -8,20 +8,22 @@ date: "Jun 2026 - Present"
 technologies:
   - Next.js
   - React
-  - Expo
-  - React Native
+  - TypeScript
+  - Node.js
   - Express
   - PostgreSQL
   - Prisma
   - Redis
-  - TypeScript
-  - Zod
+  - BullMQ
+  - REST APIs
   - Tailwind CSS
   - shadcn/ui
   - TanStack Query
   - Zustand
+  - Zod
+  - Expo
+  - React Native
   - Turborepo
-  - BullMQ
 features:
   - Designed around the real day-to-day workflow of a family-run tailoring shop
   - Multi-shop workspaces with role-based membership (owner/staff)
@@ -57,8 +59,8 @@ A tailoring business management system built for a family member's tailoring sho
 
 - **Next.js & React** for the web app
 - **Expo & React Native** for the mobile app
-- **Express, Prisma & PostgreSQL** for the API and data layer
-- **Redis** for rate limiting and background jobs
+- **Node.js, Express, Prisma & PostgreSQL** for the API and data layer
+- **Redis & BullMQ** for rate limiting and background jobs
 - **Zod** for shared validation across every app
 - **TanStack Query & Zustand** for data fetching and client state
 - **Turborepo & pnpm** to manage the monorepo
