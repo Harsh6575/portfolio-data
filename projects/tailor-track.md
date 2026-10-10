@@ -1,40 +1,40 @@
 ---
 title: "Tailor Track"
 slug: tailor-track
-description: "A tailoring business management system for small and medium tailoring shops, built as a Turborepo monorepo with a Next.js web app, an Expo mobile app, and an Express + PostgreSQL API sharing a single validation layer."
+description: "Shop management software for a family member's tailoring business: a web app, a mobile app and an API in one monorepo."
 category: Full-Stack
 status: In Progress
 date: "Oct 2025 - Present"
 technologies:
   - Next.js
-  - React
-  - TypeScript
-  - Node.js
+  - Expo
   - Express
   - PostgreSQL
   - Prisma
   - Redis
+  - Turborepo
+  - React
+  - TypeScript
+  - Node.js
   - REST APIs
   - Tailwind CSS
   - shadcn/ui
   - TanStack Query
   - Zustand
   - Zod
-  - Expo
   - React Native
-  - Turborepo
   - Vitest
   - Docker
   - Jenkins
   - SonarQube
 features:
+  - Accounts can belong to several shops, as owner or staff
+  - One Zod validation layer shared by web, mobile and API
+  - 260+ API tests and a Jenkins pipeline
   - Designed around the real day-to-day workflow of a family-run tailoring shop
-  - Multi-shop workspaces with role-based membership (owner/staff)
   - Customer management with per-customer measurement records
-  - Shared validation and type layer across web, mobile, and API
   - Cookie-based auth for web, token + SecureStore auth for mobile
   - Mobile app built with Expo, covering auth, shops, customers, and measurements
-  - 260+ API tests across services, controllers, middleware, and routes
   - Jenkins pipeline for lint, typecheck, tests, build, and Docker images
   - Redis-backed rate limiting, structured request logging, and bcrypt password hashing
 links: []

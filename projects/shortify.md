@@ -1,26 +1,25 @@
 ---
 title: "Shortify - URL Shortener"
 slug: shortify
-description: "A URL shortener built to practice backend design past basic CRUD. Combines deterministic hashing with collision handling, MongoDB storage, and a Redis cache in front of the database to keep redirects fast."
+description: "A URL shortener where the same long URL always gets the same short link."
 category: Backend
 status: Completed
 date: "Nov 2025 - May 2026"
 technologies:
   - Python
   - FastAPI
-  - REST APIs
   - MongoDB
   - Redis
   - Docker
+  - REST APIs
   - Docker Compose
 features:
-  - Deterministic short IDs from a SHA-256 hash encoded in Base62
-  - Collision handling by salting and re-hashing, with no central counter
-  - Same long URL always returns the same short link
-  - Cache-aside Redis layer in front of MongoDB with a 24-hour TTL
+  - 7-character IDs from SHA-256 and Base62, with collisions re-hashed
+  - Redis cache in front of MongoDB, 301 redirects
   - Unique index on the short ID enforced in MongoDB
   - Async database access with Motor (MongoDB async driver)
   - Docker Compose setup for MongoDB and Redis
+  - Same long URL always returns the same short link
 links:
   - type: github
     label: View Source

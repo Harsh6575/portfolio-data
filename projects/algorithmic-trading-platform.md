@@ -1,29 +1,29 @@
 ---
 title: "Algorithmic Trading Platform"
 slug: algorithmic-trading-platform
-description: "A trading platform for the Indian equities market, built during my time at a fintech startup. I focused primarily on the frontend, with some backend contributions."
+description: "The trading frontend for an Indian equities platform: dashboards, portfolios and strategy backtesting."
 category: FinTech
 status: Professional Project
 date: "Sep 2023 - May 2025"
 technologies:
   - Next.js
-  - React
   - TypeScript
+  - GraphQL
+  - Django
+  - PostgreSQL
+  - React
   - Tailwind CSS
   - shadcn/ui
   - Python
-  - Django
-  - PostgreSQL
   - Celery
-  - GraphQL
   - REST APIs
   - Docker
   - Axios
   - Zustand
 features:
   - Trading dashboard and portfolio views
-  - Strategy and backtesting interfaces
-  - GraphQL-driven data layer for efficient client-server communication
+  - Strategy and backtesting screens
+  - GraphQL-driven data layer
 links: []
 order: 5
 hidden: false
