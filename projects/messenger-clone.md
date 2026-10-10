@@ -37,7 +37,7 @@ A real-time chat app covering one-on-one and group conversations, image messages
 
 - Sign-in goes through NextAuth.js, with GitHub, Google, and a bcrypt-backed credentials option side by side.
 - Prisma models users, conversations, and messages over MongoDB, and an `isGroup` flag on each conversation is what separates a 1:1 thread from a named group chat.
-- Pusher pushes new messages, typing indicators, and seen-status updates to every connected client, so conversations stay live without polling the server.
+- Pusher pushes new messages and seen-status updates to every connected client, so conversations stay live without polling the server.
 - A message can carry an image uploaded through Cloudinary, either alongside its text or on its own.
 - Each message keeps a list of who has seen it, which is what drives the read receipts in the UI.
 
