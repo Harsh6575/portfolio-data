@@ -4,7 +4,7 @@ slug: tailor-track
 description: "A tailoring business management system for small and medium tailoring shops, built as a Turborepo monorepo with a Next.js web app, an Expo mobile app, and an Express + PostgreSQL API sharing a single validation layer."
 category: Full-Stack
 status: In Progress
-date: "Jun 2026 - Present"
+date: "Oct 2025 - Present"
 technologies:
   - Next.js
   - React
@@ -43,6 +43,8 @@ hidden: false
 ---
 
 A tailoring business management system built for a family member's tailoring shop, and a personal experiment in running a monorepo across a web app, a mobile app, and an API with a single shared codebase for validation and types.
+
+It started in Oct 2025 as two separate repos, a Next.js frontend and an Express backend. In Jun 2026 I moved both into a Turborepo monorepo, carried most of their code over, and added the Expo mobile app.
 
 ## How It Works
 
