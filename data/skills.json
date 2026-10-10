@@ -19,7 +19,6 @@
         "BullMQ",
         "NextAuth.js",
         "Stripe",
-        "n8n Automation",
         "JWT Authentication",
         "Caching Strategies",
         "API Design"
@@ -63,6 +62,19 @@
         "Postman"
       ],
       "priority": true
+    },
+    {
+      "category": "Automation & Integrations",
+      "icon": "Workflow",
+      "period": "2025 - Present",
+      "description": "Automating business workflows and connecting products with third-party tools and CRMs.",
+      "items": [
+        "n8n Automation",
+        "Zapier",
+        "HubSpot",
+        "Third-party API Integrations"
+      ],
+      "priority": false
     },
     {
       "category": "Database & System Concepts",
@@ -112,7 +124,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-08-30",
+    "lastUpdated": "2026-10-11",
     "version": "2.0"
   }
 }
