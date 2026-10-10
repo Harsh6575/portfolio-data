@@ -15,6 +15,24 @@ portfolio-data/
 
 ## How the site reads it
 
+```mermaid
+flowchart LR
+    subgraph data["portfolio-data (this repo)"]
+        P["projects/*.md"]
+        R["assets/Harsh_Vansjaliya_Resume.pdf"]
+        S["data/skills.json"]
+    end
+    subgraph site["portfolio (Next.js site)"]
+        LP["lib/projects.ts"]
+        CI["constants/info.ts"]
+        CS["constants/skills.ts"]
+    end
+    P -- "GitHub API + raw files, cached 1h" --> LP --> PG["/projects pages"]
+    R -- "raw URL link" --> CI --> RB["Resume link"]
+    CS --> SK["Skills section"]
+    S -. "not read, keep in sync by hand" .- CS
+```
+
 | File | Read by | How |
 |---|---|---|
 | `projects/*.md` | `lib/projects.ts` | Lists the folder through the GitHub contents API, fetches each file from `raw.githubusercontent.com`, and parses it with `gray-matter` |
@@ -42,6 +60,8 @@ Each file in `projects/` is front matter followed by the long-form write-up show
 | `hidden` | boolean | `true` keeps the file but hides the project |
 
 Body sections used so far: an intro paragraph, `## How It Works`, `## Key Highlights`, `## Tech Stack`.
+
+Diagrams go in fenced ` ```mermaid ` blocks. The site renders them (light and dark), and so does GitHub. Each diagram follows the same rule as the text: draw only what the code does.
 
 **Rule:** a project file only claims what that project's code does, so a reader can check it against the repo. Experience from jobs belongs on the site's experience section and in the skills list.
 

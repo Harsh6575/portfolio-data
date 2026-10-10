@@ -35,13 +35,26 @@ Shortify started as a way to practice backend design beyond basic CRUD, so most 
 
 - A short ID is a SHA-256 hash of the long URL, encoded in Base62 for a compact, URL-safe string. The same long URL always maps to the same short ID, so shortening it twice returns the existing link instead of creating a duplicate.
 - If a short ID is already taken by a different URL, a UUID salt is appended and the URL is re-hashed until the ID is free. This keeps generation stateless, with no central counter to coordinate.
+
+```mermaid
+flowchart TD
+    A["POST /shorten"] --> B["SHA-256 of the URL, Base62, first 7 characters"]
+    B --> C{"Short ID already in MongoDB?"}
+    C -- "yes, same URL" --> E["Return the existing link"]
+    C -- "yes, different URL" --> D["Append a UUID salt and re-hash"] --> C
+    C -- no --> F["Save to MongoDB and cache in Redis"] --> G["Return the new link"]
+```
+
 - MongoDB stores the URL mappings, with a unique index on the short ID as the final guard against duplicates.
 - Redirects follow a cache-aside pattern: Redis is checked first, and on a miss the mapping is read from MongoDB and cached for 24 hours.
 
-```
-Request → Redis (cache) → MongoDB (source of truth)
-          ↓ miss            ↓ found
-          query DB -------→ cache result (24h TTL)
+```mermaid
+flowchart LR
+    A["GET /{short_id}"] --> B{"In Redis?"}
+    B -- hit --> R["301 redirect"]
+    B -- miss --> C{"In MongoDB?"}
+    C -- found --> D["Cache in Redis for 24h"] --> R
+    C -- not found --> N["404"]
 ```
 
 - Database calls run through Motor, MongoDB's async driver, so the FastAPI service handles concurrent redirects without blocking.
