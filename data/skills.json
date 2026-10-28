@@ -1,8 +1,48 @@
 {
+  "coreStack": [
+    {
+      "layer": "Backend",
+      "items": [
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "Django",
+        "BullMQ",
+        "GraphQL"
+      ]
+    },
+    {
+      "layer": "Frontend",
+      "items": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Zustand"
+      ]
+    },
+    {
+      "layer": "Data",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Prisma"
+      ]
+    },
+    {
+      "layer": "Infra",
+      "items": [
+        "Docker",
+        "AWS",
+        "Vercel",
+        "n8n"
+      ]
+    }
+  ],
   "skills": [
     {
       "category": "Backend Development",
-      "icon": "Server",
       "period": "2023 - Present",
       "description": "Building scalable backend systems, well-structured APIs, and production-ready service architectures.",
       "items": [
@@ -27,7 +67,6 @@
     },
     {
       "category": "Frontend Development",
-      "icon": "Code",
       "period": "2022 - Present",
       "description": "Developing modern, responsive user interfaces and integrating complex backend APIs.",
       "items": [
@@ -44,7 +83,6 @@
     },
     {
       "category": "Cloud & DevOps",
-      "icon": "Wrench",
       "period": "2023 - Present",
       "description": "Deploying, containerizing, and managing applications on cloud infrastructure.",
       "items": [
@@ -65,7 +103,6 @@
     },
     {
       "category": "Automation & Integrations",
-      "icon": "Workflow",
       "period": "2025 - Present",
       "description": "Automating business workflows and connecting products with third-party tools and CRMs.",
       "items": [
@@ -78,7 +115,6 @@
     },
     {
       "category": "Database & System Concepts",
-      "icon": "Database",
       "period": "2023 - Present",
       "description": "Designing efficient data models and optimizing database performance.",
       "items": [
@@ -92,7 +128,6 @@
     },
     {
       "category": "Python & Market Data Analysis",
-      "icon": "CandlestickChart",
       "period": "2023 - Present",
       "description": "Working with market data to analyze trends, visualize insights, and experiment with trading strategies.",
       "items": [
@@ -110,7 +145,6 @@
     },
     {
       "category": "Languages",
-      "icon": "Terminal",
       "period": "2022 - Present",
       "description": "Programming languages used across backend, frontend, and automation projects.",
       "items": [
@@ -124,7 +158,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-10-11",
+    "lastUpdated": "2026-10-28",
     "version": "2.0"
   }
 }
