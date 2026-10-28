@@ -47,21 +47,21 @@ Each file in `projects/` is front matter followed by the long-form write-up show
 
 | Field | Type | Notes |
 |---|---|---|
-| `title` | string | Shown on the card and page |
+| `title` | string | Shown in the project list and as the page heading; text after ` - ` becomes the page subtitle |
 | `slug` | string | URL path (`/projects/<slug>`); defaults to the file name |
-| `description` | string | One or two sentences for the card |
+| `description` | string | One short sentence, shown under the title in the project list |
 | `category` | string | e.g. `Full-Stack`, `Backend`, `FinTech` |
 | `status` | string | e.g. `Completed`, `In Progress`, `Professional Project` |
 | `date` | string | e.g. `"Nov 2025 - May 2026"` |
-| `technologies` | string[] | Also links skills on the site to this project |
-| `features` | string[] | Bullet highlights on the card |
+| `technologies` | string[] | Shown on the project page, grouped by layer (frontend, backend, data, infra) |
+| `features` | string[] | Not shown on the site at the moment; keep for the write-up's own reference |
 | `links` | `{ type, label, url }[]` | `type` is `github` or `live`; use `[]` for none |
 | `order` | number | Sort order, lowest first |
 | `hidden` | boolean | `true` keeps the file but hides the project |
 
 Body sections used so far: an intro paragraph, `## How It Works`, `## Key Highlights`, `## Tech Stack`.
 
-Diagrams go in fenced ` ```mermaid ` blocks. The site renders them (light and dark), and so does GitHub. Each diagram follows the same rule as the text: draw only what the code does.
+Diagrams go in fenced ` ```mermaid ` blocks. The site renders them with mermaid's dark theme, and so does GitHub. Each diagram follows the same rule as the text: draw only what the code does.
 
 **Rule:** a project file only claims what that project's code does, so a reader can check it against the repo. Experience from jobs belongs on the site's experience section and in the skills list.
 
@@ -75,10 +75,12 @@ Diagrams go in fenced ` ```mermaid ` blocks. The site renders them (light and da
 | `messenger-clone.md` | Messenger Clone | Completed | 4 |
 | `algorithmic-trading-platform.md` | Algorithmic Trading Platform | Professional Project | 5 |
 | `shortify.md` | Shortify | Completed | 6 |
+| `cooked.md` | cooked | Completed | 7 |
+| `margin.md` | Margin | Completed | 8 |
 
 ## Skills file
 
-`data/skills.json` holds a list of categories, each with `category`, `icon` (a [lucide](https://lucide.dev/icons) icon name), `period`, `description`, `items` and `priority` (`true` shows it as a primary category, `false` as supporting), plus `metadata.lastUpdated`.
+`data/skills.json` mirrors `constants/skills.ts`: `coreStack` is the four short lines the skills section shows (`layer` and `items`), and `skills` is the full list behind its "Show everything I've used" toggle, each with `category`, `period`, `description`, `items` and `priority`. Plus `metadata.lastUpdated`.
 
 ## Adding or changing content
 
