@@ -29,7 +29,7 @@ links:
   - type: github
     label: Code
     url: https://github.com/harsh6575/airbnb-clone
-order: 2
+order: 6
 hidden: false
 ---
 

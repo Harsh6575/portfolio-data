@@ -70,13 +70,13 @@ Diagrams go in fenced ` ```mermaid ` blocks. The site renders them with mermaid'
 | File | Project | Status | Order |
 |---|---|---|---|
 | `tailor-track.md` | Tailor Track | In Progress | 1 |
-| `hotel-reservation-platform.md` | Hotel Reservation Platform (Airbnb-style) | Completed | 2 |
-| `spotify-clone.md` | Spotify Clone | Completed | 3 |
-| `messenger-clone.md` | Messenger Clone | Completed | 4 |
+| `cooked.md` | cooked | Completed | 2 |
+| `margin.md` | Margin | Completed | 3 |
+| `shortify.md` | Shortify | Completed | 4 |
 | `algorithmic-trading-platform.md` | Algorithmic Trading Platform | Professional Project | 5 |
-| `shortify.md` | Shortify | Completed | 6 |
-| `cooked.md` | cooked | Completed | 7 |
-| `margin.md` | Margin | Completed | 8 |
+| `hotel-reservation-platform.md` | Hotel Reservation Platform (Airbnb-style) | Completed | 6 |
+| `messenger-clone.md` | Messenger Clone | Completed | 7 |
+| `spotify-clone.md` | Spotify Clone | Completed | 8 |
 
 ## Skills file
 

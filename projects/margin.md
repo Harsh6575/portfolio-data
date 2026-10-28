@@ -23,7 +23,7 @@ features:
   - Every server action validates its input and checks that each id belongs to the user
   - Full JSON export and account deletion
 links: []
-order: 8
+order: 3
 hidden: false
 ---
 
