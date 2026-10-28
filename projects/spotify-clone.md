@@ -1,7 +1,7 @@
 ---
 title: "Spotify Clone - Music Streaming Platform"
 slug: spotify-clone
-description: "A full-stack music streaming app inspired by Spotify, built with Next.js and Supabase. Handles song uploads, playback, liked songs, and Stripe-powered premium subscriptions."
+description: "A music streaming app with song uploads, a custom player and Stripe premium subscriptions."
 category: Full-Stack
 status: Completed
 date: "Aug - Sep 2023"

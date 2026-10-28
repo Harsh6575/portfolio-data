@@ -1,7 +1,7 @@
 ---
 title: "Hotel Reservation Platform"
 slug: hotel-reservation-platform
-description: "A full-stack hospitality marketplace inspired by Airbnb, built with Next.js and Prisma. Covers multi-provider auth, host listings with map-based search, and a full booking flow from browsing to reservation."
+description: "A booking marketplace in the style of Airbnb: host listings, map search and date-range reservations."
 category: Full-Stack
 status: Completed
 date: "May - Jun 2023"

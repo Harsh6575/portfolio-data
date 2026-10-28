@@ -1,7 +1,7 @@
 ---
 title: "Messenger Clone - Real-Time Chat App"
 slug: messenger-clone
-description: "A real-time chat app built with Next.js, Prisma, and Pusher to get hands-on with real-time architecture beyond request/response CRUD. Supports one-on-one and group conversations, image messages, and live read receipts."
+description: "Real-time one-on-one and group chat with image messages and live read receipts."
 category: Full-Stack
 status: Completed
 date: "May - Jul 2023"
