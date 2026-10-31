@@ -27,7 +27,7 @@ links:
   - type: github
     label: Code
     url: https://github.com/harsh6575/messanger-clone-next
-order: 7
+order: 8
 hidden: false
 ---
 

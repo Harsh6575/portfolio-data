@@ -30,13 +30,16 @@ technologies:
 features:
   - Accounts can belong to several shops, as owner or staff
   - One Zod validation layer shared by web, mobile and API
-  - 260+ API tests and a Jenkins pipeline
+  - 320+ API tests, unit and integration, and a Jenkins pipeline
   - Designed around the real day-to-day workflow of a family-run tailoring shop
   - Customer management with per-customer measurement records
   - Cookie-based auth for web, token + SecureStore auth for mobile
   - Mobile app built with Expo, covering auth, shops, customers, and measurements
   - Jenkins pipeline for lint, typecheck, tests, build, and Docker images
   - Redis-backed rate limiting, structured request logging, and bcrypt password hashing
+  - Today screen that opens any customer by their shop number
+  - Fast measurement entry with garment presets, last-time values and quarter inches typed as 38.5, 38 1/2 or 38½
+  - Printed slips and WhatsApp sharing, with optional Gujarati measurement names
 links: []
 order: 1
 hidden: false
@@ -65,15 +68,16 @@ flowchart LR
 ```
 
 - The web app authenticates over httpOnly cookies, while the mobile app authenticates with tokens stored in Expo SecureStore, both against the same Express API.
-- Prisma models users, shops, and shop membership so a single account can belong to multiple shops with an OWNER or STAFF role, alongside per-shop customers and their measurements.
-- Every request is logged through morgan into winston and passes a Redis-backed rate limiter. Protected routes then check the JWT and a Redis denylist, so logout, password change and account deletion revoke the current token immediately. Shop routes also check the caller is a member of that shop. Passwords are hashed with bcrypt, and the same Zod schemas validate input on both the API and the clients that consume it.
+- Prisma models users, shops, and shop membership so a single account can belong to multiple shops with an OWNER or STAFF role, alongside per-shop customers and their measurements. Each customer gets a number scoped to their shop, which is what the shop uses to find them and what appears in URLs.
+- The day starts on a Today screen: type a customer's number and press Enter to open them, with shop totals, recent customers and customers still without a sheet. Taking a sheet uses kurta, sherwani and suit presets, moves field to field on Enter, shows last time's value under each field, and parses quarter inches typed as 38.5, 38 1/2 or 38½. A sheet prints as a slip or goes out on WhatsApp, with Gujarati measurement names shown next to the English ones if the shop wants them.
+- Every request is logged through morgan into winston and passes a Redis-backed rate limiter. Protected routes then check the JWT and a Redis denylist, so logout, password change and account deletion revoke the current token immediately. Shop routes also check the caller is a member of that shop. Passwords are hashed with bcrypt, and the same Zod schemas validate input on both the API and the clients that consume it. If Redis goes down, customers and sheets keep working and only sign-in asks the user to retry, and the API refuses to start in production with a weak or example JWT secret.
 
 ```mermaid
 flowchart TD
-    A["Request"] --> B["morgan → winston logging"] --> C["Rate limiter (Redis)"] --> D["JWT check + denylist (Redis)"] --> E["Shop membership check"] --> F["Controller → service"] --> G[("PostgreSQL")]
+    A["Request"] --> B["morgan → winston logging"] --> C["Rate limiter (Redis)"] --> D["JWT check + denylist (Redis)"] --> E["Shop membership check"] --> F["Route → service → repository"] --> G[("PostgreSQL")]
 ```
 
-- The API has 260+ tests written with Vitest and Supertest, covering services, controllers, middleware, and routes.
+- The API has 320+ tests written with Vitest and Supertest: unit tests for services, middleware, routes and utilities, plus integration tests that run auth, customers and measurements against a real database.
 - A Jenkins pipeline runs lint, typecheck, tests, the build, and Docker image builds for the API and web app, with SonarQube used for code-quality analysis.
 
 ```mermaid
@@ -91,7 +95,9 @@ Turborepo filters each stage to the packages changed since the last commit or th
 - Shared validation and type layer across web, mobile, and API
 - Cookie-based auth for web, token + SecureStore auth for mobile
 - Mobile app built with Expo, covering auth, shops, customers, and measurements
-- 260+ API tests across services, controllers, middleware, and routes
+- Today screen, number lookup, fast sheet entry, printed slips and WhatsApp sharing
+- Gujarati measurement names alongside English, in a design drawn from Kutch block prints
+- 320+ API tests, unit and integration
 - Jenkins pipeline for lint, typecheck, tests, build, and Docker images
 - Redis-backed rate limiting, structured request logging, and bcrypt password hashing
 - Orders, payments, and delivery tracking are still in progress

@@ -25,7 +25,7 @@ features:
   - Strategy and backtesting screens
   - GraphQL-driven data layer
 links: []
-order: 5
+order: 6
 hidden: false
 ---
 

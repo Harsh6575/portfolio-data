@@ -72,11 +72,12 @@ Diagrams go in fenced ` ```mermaid ` blocks. The site renders them with mermaid'
 | `tailor-track.md` | Tailor Track | In Progress | 1 |
 | `cooked.md` | cooked | Completed | 2 |
 | `margin.md` | Margin | Completed | 3 |
-| `shortify.md` | Shortify | Completed | 4 |
-| `algorithmic-trading-platform.md` | Algorithmic Trading Platform | Professional Project | 5 |
-| `hotel-reservation-platform.md` | Hotel Reservation Platform (Airbnb-style) | Completed | 6 |
-| `messenger-clone.md` | Messenger Clone | Completed | 7 |
-| `spotify-clone.md` | Spotify Clone | Completed | 8 |
+| `invoxa.md` | Invoxa | In Progress | 4 |
+| `shortify.md` | Shortify | Completed | 5 |
+| `algorithmic-trading-platform.md` | Algorithmic Trading Platform | Professional Project | 6 |
+| `hotel-reservation-platform.md` | Hotel Reservation Platform (Airbnb-style) | Completed | 7 |
+| `messenger-clone.md` | Messenger Clone | Completed | 8 |
+| `spotify-clone.md` | Spotify Clone | Completed | 9 |
 
 ## Skills file
 

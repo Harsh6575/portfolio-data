@@ -24,7 +24,7 @@ links:
   - type: github
     label: View Source
     url: https://github.com/harsh6575/shortify
-order: 4
+order: 5
 hidden: false
 ---
 

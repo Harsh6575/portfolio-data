@@ -26,7 +26,7 @@ links:
   - type: github
     label: Code
     url: https://github.com/harsh6575/spotify-clone
-order: 8
+order: 9
 hidden: false
 ---
 
